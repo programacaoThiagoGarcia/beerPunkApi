@@ -9,6 +9,6 @@
 import Foundation
 
 
-let BASEURL = "https://api.punkapi.com/v2/beers?page={p}&per_page=30"
+let BASEURL = "https://api.punkapi.com/v2/beers?page={p}&per_page=25"
 
 
