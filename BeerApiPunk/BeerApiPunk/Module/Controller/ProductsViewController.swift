@@ -78,7 +78,7 @@ extension ProductsViewController : UIScrollViewDelegate{
     }
     
     func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
-        self.mainView.tableView.reloadData()
+        
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
@@ -93,6 +93,7 @@ extension ProductsViewController : UIScrollViewDelegate{
                 production?.page = self.pageNo.toString()
                 production?.getProductions({ (produtionsResult) in
                     self.productions.append(contentsOf: produtionsResult)
+                    self.mainView.tableView.reloadData()
                     
                 })
                 
