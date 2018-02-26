@@ -18,7 +18,7 @@
 		76C09F3B20443B950006E8F8 /* DetailProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F3A20443B950006E8F8 /* DetailProductViewController.swift */; };
 		76C09F3D20443EB10006E8F8 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F3C20443EB10006E8F8 /* ProductTableViewCell.swift */; };
 		76C09F40204441D60006E8F8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F3F204441D60006E8F8 /* Product.swift */; };
-		76C09F422044453F0006E8F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F412044453F0006E8F8 /* Constants.swift */; };
+		76C09F422044453F0006E8F8 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F412044453F0006E8F8 /* EndPoint.swift */; };
 		76C09F44204445970006E8F8 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F43204445970006E8F8 /* Connection.swift */; };
 		76C09F4620444A200006E8F8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F4520444A200006E8F8 /* Extension.swift */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,7 @@
 		76C09F3A20443B950006E8F8 /* DetailProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductViewController.swift; sourceTree = "<group>"; };
 		76C09F3C20443EB10006E8F8 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		76C09F3F204441D60006E8F8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		76C09F412044453F0006E8F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76C09F412044453F0006E8F8 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		76C09F43204445970006E8F8 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		76C09F4520444A200006E8F8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B60841902EE443FB557D820E /* Pods_BeerApiPunk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerApiPunk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +108,7 @@
 				76C09F1C2044333E0006E8F8 /* AppDelegate.swift */,
 				76C09F232044333E0006E8F8 /* Assets.xcassets */,
 				76C09F252044333E0006E8F8 /* LaunchScreen.storyboard */,
-				76C09F412044453F0006E8F8 /* Constants.swift */,
+				76C09F412044453F0006E8F8 /* EndPoint.swift */,
 				76C09F4520444A200006E8F8 /* Extension.swift */,
 			);
 			path = Other;
@@ -312,7 +312,7 @@
 				76C09F3B20443B950006E8F8 /* DetailProductViewController.swift in Sources */,
 				76C09F3D20443EB10006E8F8 /* ProductTableViewCell.swift in Sources */,
 				76C09F40204441D60006E8F8 /* Product.swift in Sources */,
-				76C09F422044453F0006E8F8 /* Constants.swift in Sources */,
+				76C09F422044453F0006E8F8 /* EndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
