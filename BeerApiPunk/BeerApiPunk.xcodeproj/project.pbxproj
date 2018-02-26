@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		03C02F3C65FE92ED007A346B /* Pods_BeerApiPunk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60841902EE443FB557D820E /* Pods_BeerApiPunk.framework */; };
 		76C09F1D2044333E0006E8F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F1C2044333E0006E8F8 /* AppDelegate.swift */; };
-		76C09F1F2044333E0006E8F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F1E2044333E0006E8F8 /* ViewController.swift */; };
 		76C09F222044333E0006E8F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C09F202044333E0006E8F8 /* Main.storyboard */; };
 		76C09F242044333E0006E8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C09F232044333E0006E8F8 /* Assets.xcassets */; };
 		76C09F272044333E0006E8F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C09F252044333E0006E8F8 /* LaunchScreen.storyboard */; };
+		76C09F3520443B220006E8F8 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F3420443B220006E8F8 /* ProductsView.swift */; };
+		76C09F3720443B470006E8F8 /* DetailProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F3620443B470006E8F8 /* DetailProductView.swift */; };
+		76C09F3920443B7C0006E8F8 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F3820443B7C0006E8F8 /* ProductsViewController.swift */; };
+		76C09F3B20443B950006E8F8 /* DetailProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F3A20443B950006E8F8 /* DetailProductViewController.swift */; };
+		76C09F3D20443EB10006E8F8 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F3C20443EB10006E8F8 /* ProductTableViewCell.swift */; };
+		76C09F40204441D60006E8F8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F3F204441D60006E8F8 /* Product.swift */; };
+		76C09F422044453F0006E8F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F412044453F0006E8F8 /* Constants.swift */; };
+		76C09F44204445970006E8F8 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F43204445970006E8F8 /* Connection.swift */; };
+		76C09F4620444A200006E8F8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F4520444A200006E8F8 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2137D7D0321CEE524D73D185 /* Pods-BeerApiPunk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApiPunk.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerApiPunk/Pods-BeerApiPunk.release.xcconfig"; sourceTree = "<group>"; };
 		76C09F192044333E0006E8F8 /* BeerApiPunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApiPunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C09F1C2044333E0006E8F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76C09F1E2044333E0006E8F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76C09F212044333E0006E8F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76C09F232044333E0006E8F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76C09F262044333E0006E8F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76C09F282044333E0006E8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76C09F3420443B220006E8F8 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		76C09F3620443B470006E8F8 /* DetailProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductView.swift; sourceTree = "<group>"; };
+		76C09F3820443B7C0006E8F8 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		76C09F3A20443B950006E8F8 /* DetailProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductViewController.swift; sourceTree = "<group>"; };
+		76C09F3C20443EB10006E8F8 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		76C09F3F204441D60006E8F8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		76C09F412044453F0006E8F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76C09F43204445970006E8F8 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		76C09F4520444A200006E8F8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B60841902EE443FB557D820E /* Pods_BeerApiPunk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerApiPunk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C702B99A8464A21A1E554231 /* Pods-BeerApiPunk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApiPunk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerApiPunk/Pods-BeerApiPunk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,14 +94,78 @@
 		76C09F1B2044333E0006E8F8 /* BeerApiPunk */ = {
 			isa = PBXGroup;
 			children = (
-				76C09F1C2044333E0006E8F8 /* AppDelegate.swift */,
-				76C09F1E2044333E0006E8F8 /* ViewController.swift */,
-				76C09F202044333E0006E8F8 /* Main.storyboard */,
-				76C09F232044333E0006E8F8 /* Assets.xcassets */,
-				76C09F252044333E0006E8F8 /* LaunchScreen.storyboard */,
+				76C09F30204439CE0006E8F8 /* Module */,
+				76C09F2F204439B00006E8F8 /* API */,
+				76C09F2E204439980006E8F8 /* Other */,
 				76C09F282044333E0006E8F8 /* Info.plist */,
 			);
 			path = BeerApiPunk;
+			sourceTree = "<group>";
+		};
+		76C09F2E204439980006E8F8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				76C09F1C2044333E0006E8F8 /* AppDelegate.swift */,
+				76C09F232044333E0006E8F8 /* Assets.xcassets */,
+				76C09F252044333E0006E8F8 /* LaunchScreen.storyboard */,
+				76C09F412044453F0006E8F8 /* Constants.swift */,
+				76C09F4520444A200006E8F8 /* Extension.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		76C09F2F204439B00006E8F8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				76C09F43204445970006E8F8 /* Connection.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		76C09F30204439CE0006E8F8 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				76C09F3E204441AD0006E8F8 /* Model */,
+				76C09F33204439E80006E8F8 /* Controller */,
+				76C09F32204439DF0006E8F8 /* View */,
+				76C09F31204439D60006E8F8 /* Presenter */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		76C09F31204439D60006E8F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				76C09F202044333E0006E8F8 /* Main.storyboard */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		76C09F32204439DF0006E8F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76C09F3420443B220006E8F8 /* ProductsView.swift */,
+				76C09F3620443B470006E8F8 /* DetailProductView.swift */,
+				76C09F3C20443EB10006E8F8 /* ProductTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76C09F33204439E80006E8F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76C09F3820443B7C0006E8F8 /* ProductsViewController.swift */,
+				76C09F3A20443B950006E8F8 /* DetailProductViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76C09F3E204441AD0006E8F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76C09F3F204441D60006E8F8 /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C09F1F2044333E0006E8F8 /* ViewController.swift in Sources */,
+				76C09F3720443B470006E8F8 /* DetailProductView.swift in Sources */,
+				76C09F44204445970006E8F8 /* Connection.swift in Sources */,
+				76C09F3520443B220006E8F8 /* ProductsView.swift in Sources */,
+				76C09F3920443B7C0006E8F8 /* ProductsViewController.swift in Sources */,
 				76C09F1D2044333E0006E8F8 /* AppDelegate.swift in Sources */,
+				76C09F4620444A200006E8F8 /* Extension.swift in Sources */,
+				76C09F3B20443B950006E8F8 /* DetailProductViewController.swift in Sources */,
+				76C09F3D20443EB10006E8F8 /* ProductTableViewCell.swift in Sources */,
+				76C09F40204441D60006E8F8 /* Product.swift in Sources */,
+				76C09F422044453F0006E8F8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
