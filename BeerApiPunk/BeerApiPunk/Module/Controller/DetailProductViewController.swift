@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 
 class DetailProductViewController: UIViewController {
@@ -32,21 +33,12 @@ class DetailProductViewController: UIViewController {
             self.mainView.lblDescription.text = choiseProduct?.description
             self.mainView.lblIbu.text         = choiseProduct?.ibu.toString()
             self.mainView.lblAbv.text         = "\((choiseProduct?.abv)!) %vol"
- 
-            DispatchQueue.global().async {
-                let url = URL(string: (self.choiseProduct?.img)!)
-                let http = URLSession.shared
-                let task = http.dataTask(with: url!, completionHandler: { (data, response, erro) in
-                    DispatchQueue.main.async {
-                        self.mainView.imgImage.image = UIImage(data: data!)
-                        self.mainView.indicator.stopAnimating()
-                    }
-                })
-                task.resume()
+            self.mainView.imgImage.sd_setImage(with: URL(string: (choiseProduct?.img)!), placeholderImage: UIImage(named: "berr"))
+            
             }
             
         }
     }
 
 
-}
+

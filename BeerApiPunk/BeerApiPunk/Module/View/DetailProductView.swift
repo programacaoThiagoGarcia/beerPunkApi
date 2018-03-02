@@ -16,7 +16,5 @@ class DetailProductView: UIView {
     @IBOutlet weak var lblIbu: UILabel!
     @IBOutlet weak var lblDescription: UITextView!
     @IBOutlet weak var imgImage: UIImageView!
-    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
-
 }

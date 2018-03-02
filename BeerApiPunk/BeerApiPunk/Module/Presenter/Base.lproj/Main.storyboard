@@ -235,19 +235,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="GT7-La-cQz">
-                                <rect key="frame" x="68" y="137" width="20" height="20"/>
-                                <color key="color" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="GT7-La-cQz" firstAttribute="centerY" secondItem="ZyM-AO-5J4" secondAttribute="centerY" constant="-1" id="2ks-t2-8rK"/>
                             <constraint firstItem="nC8-g3-j3q" firstAttribute="trailing" secondItem="yCF-4E-mFg" secondAttribute="trailing" constant="15" id="56x-dw-VH6"/>
                             <constraint firstItem="hI5-NV-ZQ0" firstAttribute="top" secondItem="uP3-4f-iR3" secondAttribute="bottom" constant="16" id="59K-hd-ehv"/>
                             <constraint firstItem="nC8-g3-j3q" firstAttribute="trailing" secondItem="hI5-NV-ZQ0" secondAttribute="trailing" constant="16" id="BYS-Ko-7wN"/>
                             <constraint firstItem="nC8-g3-j3q" firstAttribute="bottom" secondItem="STT-RD-waX" secondAttribute="bottom" constant="20" id="CTs-nL-bIm"/>
-                            <constraint firstItem="GT7-La-cQz" firstAttribute="centerX" secondItem="ZyM-AO-5J4" secondAttribute="centerX" constant="-7.5" id="Dbv-CJ-Aya"/>
                             <constraint firstItem="nC8-g3-j3q" firstAttribute="trailing" secondItem="uP3-4f-iR3" secondAttribute="trailing" constant="15" id="FCP-Uq-IrO"/>
                             <constraint firstItem="STT-RD-waX" firstAttribute="top" secondItem="hI5-NV-ZQ0" secondAttribute="bottom" constant="6" id="HgB-nS-Pc7"/>
                             <constraint firstItem="uP3-4f-iR3" firstAttribute="top" secondItem="yCF-4E-mFg" secondAttribute="bottom" constant="8" id="Ozf-V0-r5v"/>
@@ -263,7 +257,6 @@
                         <viewLayoutGuide key="safeArea" id="nC8-g3-j3q"/>
                         <connections>
                             <outlet property="imgImage" destination="ZyM-AO-5J4" id="e7a-sO-hvh"/>
-                            <outlet property="indicator" destination="GT7-La-cQz" id="vvL-EY-ByE"/>
                             <outlet property="lblAbv" destination="Foy-Pa-adP" id="fwU-xE-FAH"/>
                             <outlet property="lblDescription" destination="STT-RD-waX" id="zfD-e8-4uj"/>
                             <outlet property="lblIbu" destination="ab6-n7-xyZ" id="Bdi-Ro-kYP"/>

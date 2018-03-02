@@ -126,10 +126,10 @@
 		76C09F1B2044333E0006E8F8 /* BeerApiPunk */ = {
 			isa = PBXGroup;
 			children = (
-				76C09F30204439CE0006E8F8 /* Module */,
 				76C09F2F204439B00006E8F8 /* API */,
-				76C09F2E204439980006E8F8 /* Other */,
 				76C09F282044333E0006E8F8 /* Info.plist */,
+				76C09F30204439CE0006E8F8 /* Module */,
+				76C09F2E204439980006E8F8 /* Other */,
 			);
 			path = BeerApiPunk;
 			sourceTree = "<group>";
@@ -139,9 +139,9 @@
 			children = (
 				76C09F1C2044333E0006E8F8 /* AppDelegate.swift */,
 				76C09F232044333E0006E8F8 /* Assets.xcassets */,
-				76C09F252044333E0006E8F8 /* LaunchScreen.storyboard */,
 				76C09F412044453F0006E8F8 /* EndPoint.swift */,
 				76C09F4520444A200006E8F8 /* Extension.swift */,
+				76C09F252044333E0006E8F8 /* LaunchScreen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -157,10 +157,10 @@
 		76C09F30204439CE0006E8F8 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				76C09F3E204441AD0006E8F8 /* Model */,
 				76C09F33204439E80006E8F8 /* Controller */,
-				76C09F32204439DF0006E8F8 /* View */,
+				76C09F3E204441AD0006E8F8 /* Model */,
 				76C09F31204439D60006E8F8 /* Presenter */,
+				76C09F32204439DF0006E8F8 /* View */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -176,8 +176,8 @@
 		76C09F32204439DF0006E8F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				76C09F3420443B220006E8F8 /* ProductsView.swift */,
 				76C09F3620443B470006E8F8 /* DetailProductView.swift */,
+				76C09F3420443B220006E8F8 /* ProductsView.swift */,
 				76C09F3C20443EB10006E8F8 /* ProductTableViewCell.swift */,
 			);
 			path = View;
@@ -186,8 +186,8 @@
 		76C09F33204439E80006E8F8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				76C09F3820443B7C0006E8F8 /* ProductsViewController.swift */,
 				76C09F3A20443B950006E8F8 /* DetailProductViewController.swift */,
+				76C09F3820443B7C0006E8F8 /* ProductsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
