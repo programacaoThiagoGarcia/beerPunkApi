@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03C02F3C65FE92ED007A346B /* Pods_BeerApiPunk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60841902EE443FB557D820E /* Pods_BeerApiPunk.framework */; };
+		76B183AC204591E10076CE0E /* BeerApiPunkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B183AB204591E10076CE0E /* BeerApiPunkUITests.swift */; };
 		76C09F1D2044333E0006E8F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F1C2044333E0006E8F8 /* AppDelegate.swift */; };
 		76C09F222044333E0006E8F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C09F202044333E0006E8F8 /* Main.storyboard */; };
 		76C09F242044333E0006E8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C09F232044333E0006E8F8 /* Assets.xcassets */; };
@@ -23,8 +24,21 @@
 		76C09F4620444A200006E8F8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C09F4520444A200006E8F8 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		76B183AE204591E10076CE0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76C09F112044333E0006E8F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76C09F182044333E0006E8F8;
+			remoteInfo = BeerApiPunk;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2137D7D0321CEE524D73D185 /* Pods-BeerApiPunk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApiPunk.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerApiPunk/Pods-BeerApiPunk.release.xcconfig"; sourceTree = "<group>"; };
+		76B183A9204591E10076CE0E /* BeerApiPunkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerApiPunkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76B183AB204591E10076CE0E /* BeerApiPunkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerApiPunkUITests.swift; sourceTree = "<group>"; };
+		76B183AD204591E10076CE0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C09F192044333E0006E8F8 /* BeerApiPunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApiPunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C09F1C2044333E0006E8F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76C09F212044333E0006E8F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +59,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		76B183A6204591E10076CE0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76C09F162044333E0006E8F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,10 +94,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		76B183AA204591E10076CE0E /* BeerApiPunkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76B183AB204591E10076CE0E /* BeerApiPunkUITests.swift */,
+				76B183AD204591E10076CE0E /* Info.plist */,
+			);
+			path = BeerApiPunkUITests;
+			sourceTree = "<group>";
+		};
 		76C09F102044333E0006E8F8 = {
 			isa = PBXGroup;
 			children = (
 				76C09F1B2044333E0006E8F8 /* BeerApiPunk */,
+				76B183AA204591E10076CE0E /* BeerApiPunkUITests */,
 				76C09F1A2044333E0006E8F8 /* Products */,
 				01F47E7E4DE219EDE3061011 /* Pods */,
 				60E84BDFF71125BFC0AAFD36 /* Frameworks */,
@@ -87,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				76C09F192044333E0006E8F8 /* BeerApiPunk.app */,
+				76B183A9204591E10076CE0E /* BeerApiPunkUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +203,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		76B183A8204591E10076CE0E /* BeerApiPunkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B183B2204591E10076CE0E /* Build configuration list for PBXNativeTarget "BeerApiPunkUITests" */;
+			buildPhases = (
+				76B183A5204591E10076CE0E /* Sources */,
+				76B183A6204591E10076CE0E /* Frameworks */,
+				76B183A7204591E10076CE0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76B183AF204591E10076CE0E /* PBXTargetDependency */,
+			);
+			name = BeerApiPunkUITests;
+			productName = BeerApiPunkUITests;
+			productReference = 76B183A9204591E10076CE0E /* BeerApiPunkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		76C09F182044333E0006E8F8 /* BeerApiPunk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76C09F2B2044333E0006E8F8 /* Build configuration list for PBXNativeTarget "BeerApiPunk" */;
@@ -201,6 +251,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Thiago Garcia";
 				TargetAttributes = {
+					76B183A8204591E10076CE0E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 76C09F182044333E0006E8F8;
+					};
 					76C09F182044333E0006E8F8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -221,11 +276,19 @@
 			projectRoot = "";
 			targets = (
 				76C09F182044333E0006E8F8 /* BeerApiPunk */,
+				76B183A8204591E10076CE0E /* BeerApiPunkUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		76B183A7204591E10076CE0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76C09F172044333E0006E8F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,6 +362,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		76B183A5204591E10076CE0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B183AC204591E10076CE0E /* BeerApiPunkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76C09F152044333E0006E8F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +388,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76B183AF204591E10076CE0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76C09F182044333E0006E8F8 /* BeerApiPunk */;
+			targetProxy = 76B183AE204591E10076CE0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		76C09F202044333E0006E8F8 /* Main.storyboard */ = {
@@ -338,6 +417,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		76B183B0204591E10076CE0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BeerApiPunkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.programacao.thiagogarcia.BeerApiPunkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BeerApiPunk;
+			};
+			name = Debug;
+		};
+		76B183B1204591E10076CE0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BeerApiPunkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.programacao.thiagogarcia.BeerApiPunkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BeerApiPunk;
+			};
+			name = Release;
+		};
 		76C09F292044333E0006E8F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -480,6 +587,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		76B183B2204591E10076CE0E /* Build configuration list for PBXNativeTarget "BeerApiPunkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B183B0204591E10076CE0E /* Debug */,
+				76B183B1204591E10076CE0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		76C09F142044333E0006E8F8 /* Build configuration list for PBXProject "BeerApiPunk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

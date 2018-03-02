@@ -84,6 +84,9 @@
                                                 <constraint firstItem="fgX-5y-CFB" firstAttribute="leading" secondItem="d7z-46-1hH" secondAttribute="trailing" constant="8" id="t7w-AF-5tX"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="Buzz">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <connections>
                                             <outlet property="imgProduct" destination="mvu-2G-JDM" id="vG8-F2-MEX"/>
                                             <outlet property="lblAvdProduct" destination="fgX-5y-CFB" id="irU-lt-2Ki"/>
