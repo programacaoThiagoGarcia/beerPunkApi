@@ -7,20 +7,19 @@
 //
 
 import Foundation
-import Alamofire
-import AlamofireObjectMapper
+
 
 class ConnectionApi{
     class func getProduct(_ url : String , completion: @escaping ( [Product], _ fail:Bool)->()){
         
-        Alamofire.request(url).responseArray { (response: DataResponse<[Product]>) in
-            let productArray = response.result.value
-            if productArray != nil{
-                completion(productArray!, false)
-            }else{
-                completion(productArray!, true)
-            }
-        }
+//        Alamofire.request(url).responseArray { (response: DataResponse<[Product]>) in
+//            let productArray = response.result.value
+//            if productArray != nil{
+//                completion(productArray!, false)
+//            }else{
+//                completion(productArray!, true)
+//            }
+//        }
         
     }
 }

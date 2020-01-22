@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SDWebImage
+//import SDWebImage
 
 class ProductsViewController: UIViewController {
     var production  : Product?
@@ -28,6 +28,7 @@ class ProductsViewController: UIViewController {
         super.viewDidLoad()
         self.mainView.tableView.delegate   = self
         self.mainView.tableView.dataSource = self
+        self.mainView.tableView.tableFooterView = UIView()
         navigationController?.navigationBar.prefersLargeTitles = true
         production = Product()
         production?.page = pageNo.toString()
@@ -59,7 +60,7 @@ extension ProductsViewController: UITableViewDataSource, UITableViewDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ProductTableViewCell
         cell.lblProductName.text = productions[indexPath.row].name
         cell.lblAvdProduct.text  = "\(productions[indexPath.row].abv) %vol"
-        cell.imgProduct.sd_setImage(with: URL(string: productions[indexPath.row].img), placeholderImage: UIImage(named: "beer"))
+//        cell.imgProduct.sd_setImage(with: URL(string: productions[indexPath.row].img), placeholderImage: UIImage(named: "beer"))
         return cell
     }
     

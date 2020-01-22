@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SDWebImage
+//import SDWebImage
 
 
 class DetailProductViewController: UIViewController {
@@ -33,7 +33,7 @@ class DetailProductViewController: UIViewController {
             self.mainView.lblDescription.text = choiseProduct?.description
             self.mainView.lblIbu.text         = choiseProduct?.ibu.toString()
             self.mainView.lblAbv.text         = "\((choiseProduct?.abv)!) %vol"
-            self.mainView.imgImage.sd_setImage(with: URL(string: (choiseProduct?.img)!), placeholderImage: UIImage(named: "berr"))
+//            self.mainView.imgImage.sd_setImage(with: URL(string: (choiseProduct?.img)!), placeholderImage: UIImage(named: "berr"))
             
             }
             

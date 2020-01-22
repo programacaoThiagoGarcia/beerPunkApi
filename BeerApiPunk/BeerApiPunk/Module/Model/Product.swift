@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import AlamofireObjectMapper
-import ObjectMapper
 
-class Product: Mappable {
+
+
+class Product{
     var name        : String = ""
     var img         : String = ""
     var abv         : Double = 0.0
@@ -19,9 +19,7 @@ class Product: Mappable {
     var description : String = ""
     var page         : String = ""
     
-    required convenience init?(map: Map) {
-       self.init()
-    }
+    
     
     func getProductions(_ completion: @escaping([Product])-> ()){
         let url = BASEURL.getUrlPage(self.page)
@@ -35,15 +33,7 @@ class Product: Mappable {
         }
     }
     
-    func mapping(map: Map) {
-        name        <- map["name"]
-        img         <- map["image_url"]
-        abv         <- map["abv"]
-        tagline     <- map["tagline"]
-        ibu         <- map["ibu"]
-        description <- map["description"]
-        
-    }
+  
     
     
 }
