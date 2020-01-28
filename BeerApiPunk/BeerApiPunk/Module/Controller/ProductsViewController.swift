@@ -9,9 +9,11 @@
 import UIKit
 
 class ProductsViewController: UIViewController {
-    var pageNo:Int=1
-    var viewModel : ProductsViewModel?
-    var getImage : UtilImage?
+    var pageNo : Int = 1
+    lazy var viewModel : ProductsViewModel = {
+        return ProductsViewModel()
+    }()
+    
     
     var mainView : ProductsView{
         get {
@@ -19,25 +21,33 @@ class ProductsViewController: UIViewController {
         }
     }
     
-    var beerList : Beer = [] {
-        didSet{
-                DispatchQueue.main.async {
-                    self.mainView.prepareTableView()
-                    self.mainView.stopLoading()
-                }
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.getImage = UtilImage()
         navigationController?.navigationBar.prefersLargeTitles = true
-        self.viewModel = ProductsViewModel()
-        viewModel?.getProductsFromPage("1") { (beer , erro) in
-            if let _beer = beer{
-                self.beerList.append(contentsOf: _beer)
+        initViewModel()
+        
+    }
+    func initViewModel(){
+
+        viewModel.reloadTableViewClosure = {[weak self] () in
+            DispatchQueue.main.async {
+                self!.mainView.prepareTableView()
+                
             }
         }
+        
+        viewModel.updateLoadingStatus = {[weak self]() in
+            DispatchQueue.main.async {
+                let isLoading = self?.viewModel.isLoading ?? false
+                if isLoading{
+                    self!.mainView.startLoading()
+                }else{
+                    self!.mainView.stopLoading()
+                }
+            }
+        }
+        
+        viewModel.getProductsFromPage("1")
     }
 
 }
@@ -46,31 +56,26 @@ class ProductsViewController: UIViewController {
 
 extension ProductsViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.beerList.count
+        return viewModel.numberOfCells
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ProductTableViewCell
-        cell.lblProductName.text = beerList[indexPath.row].name
-        cell.lblAvdProduct.text  = "\(beerList[indexPath.row].abv!) %vol"
-        self.getImage?.downloadImage(placeHolder: UIImage(named: "beer"),from: beerList[indexPath.row].imageURL!, cell.imgProduct)
+        let cell   = tableView.dequeueReusableCell(withIdentifier: "cell") as! ProductTableViewCell
+        let cellVM = viewModel.getCellViewModel(at: indexPath)
+        cell.beerListCellViewModel = cellVM
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let vc : DetailProductViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailProductViewController") as! DetailProductViewController
-        vc.id                     = "\(self.beerList[indexPath.row].id)"
+        vc.id                     = viewModel.userPressed(indexPath)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
-        if indexPath.row == self.beerList.count - 1{
+        if indexPath.row == viewModel.numberOfCells - 1{
             self.pageNo += 1
-            self.viewModel?.getProductsFromPage("\(self.pageNo)", { (beer, erro) in
-                if let _beer = beer{
-                    self.beerList.append(contentsOf: _beer)
-                }
-            })
+            viewModel.getProductsFromPage("\(self.pageNo)")
         }
     }
 }

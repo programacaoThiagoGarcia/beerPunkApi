@@ -15,6 +15,7 @@
 		5FA0690B23D8E46400FEF160 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0690123D8E46400FEF160 /* HTTPMethod.swift */; };
 		5FA0690C23D8E46400FEF160 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0690223D8E46400FEF160 /* Router.swift */; };
 		5FA0690D23D8E46400FEF160 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0690323D8E46400FEF160 /* EndPointType.swift */; };
+		5FABA90923DF93D900A2234F /* BeerListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABA90823DF93D900A2234F /* BeerListCellViewModel.swift */; };
 		5FE013E723DC580900793AA9 /* ObjectOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE013E623DC580900793AA9 /* ObjectOutput.swift */; };
 		5FE013E923DC590D00793AA9 /* BeerApiPunkEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE013E823DC590D00793AA9 /* BeerApiPunkEndPoint.swift */; };
 		5FE013EC23DC5F4C00793AA9 /* Warning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE013EB23DC5F4C00793AA9 /* Warning.swift */; };
@@ -44,6 +45,7 @@
 		5FA0690123D8E46400FEF160 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		5FA0690223D8E46400FEF160 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5FA0690323D8E46400FEF160 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		5FABA90823DF93D900A2234F /* BeerListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCellViewModel.swift; sourceTree = "<group>"; };
 		5FE013E623DC580900793AA9 /* ObjectOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectOutput.swift; sourceTree = "<group>"; };
 		5FE013E823DC590D00793AA9 /* BeerApiPunkEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerApiPunkEndPoint.swift; sourceTree = "<group>"; };
 		5FE013EB23DC5F4C00793AA9 /* Warning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warning.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				5FE013EE23DC63EF00793AA9 /* ProductsViewModel.swift */,
 				5FE013F223DC8A3D00793AA9 /* DetailProductViewModel.swift */,
+				5FABA90823DF93D900A2234F /* BeerListCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				5FE013F323DC8A3D00793AA9 /* DetailProductViewModel.swift in Sources */,
 				5FA0690723D8E46400FEF160 /* NetworkManager.swift in Sources */,
 				5FA0690B23D8E46400FEF160 /* HTTPMethod.swift in Sources */,
+				5FABA90923DF93D900A2234F /* BeerListCellViewModel.swift in Sources */,
 				76C09F3D20443EB10006E8F8 /* ProductTableViewCell.swift in Sources */,
 				76C09F40204441D60006E8F8 /* Product.swift in Sources */,
 				76C09F422044453F0006E8F8 /* EndPoint.swift in Sources */,

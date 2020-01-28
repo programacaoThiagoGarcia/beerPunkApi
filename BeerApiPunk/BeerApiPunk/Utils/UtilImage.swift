@@ -35,6 +35,23 @@ class UtilImage{
         }
     }
     
+    class func downloadImageNoCache(placeHolder : UIImage?, from url: String, _ imageView: UIImageView) {
+        let _url = URL(string: url)
+        imageView.image = nil
+        imageView.image = placeHolder
+            DispatchQueue.global().async {
+                print("Download Started")
+                URLSession.shared.dataTask(with: _url!) { (data, res, erro) in
+                    guard let data = data, erro == nil else { return }
+                    print("Download Finished")
+                    DispatchQueue.main.async() {
+                        imageView.image = UIImage(data: data)
+                    }
+                }.resume()
+            }
+        }
+    
+    
     func downloadImage(from url: String, _ imageView: UIImageView, _ completion : @escaping(_ complete : Bool)-> ()) {
         let _url = URL(string: url)
         imageView.image = nil

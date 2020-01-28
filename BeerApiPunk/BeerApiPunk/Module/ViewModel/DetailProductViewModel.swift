@@ -7,20 +7,49 @@
 //
 
 import Foundation
-class DetailProductViewModel{
-    func getProductsDetail(_ id :String, _ completion: @escaping (_ item :Beer?,_ erro  :String?)->()){
-           let repository = ProjectRepository()
-           repository.getBeersDetail(id) { (data, error) in
+class DetailProductViewModel {
+    
+    let repository      : ProjectRepository
+    var showAlerClosure : (()->())?
+    var processView     : (()->())?
+    private var beer    : Beer = Beer(){
+        didSet{
+            self.processView?()
+        }
+    }
+    var name, tagline, beerDescription: String?
+    var imageURL: String?
+    var abv: String?
+    var ibu: String?
+    
+    init() {
+        self.repository  = ProjectRepository()
+    }
+    
+    func getProductsDetail(_ id :String){
+        self.repository.getBeersDetail(id) { (data, error) in
                if error != nil{
-                    completion(nil,"ERRO")
                }
                do{
                    let beer = try? JSONDecoder().decode(Beer.self, from: data!)
-                   if let _beer = beer{
-                       completion(_beer,nil)
+                   if let _beer = beer {
+                    self.processFetcherBeer(beers: _beer)
                    }
                }
            }
-           
        }
+    
+    private func processFetcherBeer(beers : Beer){
+        self.prepareViewModel(beer:beers[0])
+        self.beer = beers
+    }
+    
+    private func prepareViewModel(beer : BeerElement){
+        self.name            = beer.name
+        self.tagline         = beer.tagline
+        self.beerDescription = beer.beerDescription
+        self.ibu             = beer.ibu?.toString() ?? "--"
+        self.abv             = "\(beer.abv) %vol"
+        self.imageURL        = beer.imageURL
+    }
 }
